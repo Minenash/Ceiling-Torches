@@ -28,7 +28,6 @@ public class CeilingAndWallStandingBlockItem extends BlockItem {
         BlockPos pos = context.getBlockPos();
 
         for (Direction dir : context.getPlacementDirections()) {
-            System.out.println(dir);
             BlockState temp = dir == Direction.UP ? this.ceilingBlock.getPlacementState(context) :
                               dir == Direction.DOWN ? this.getBlock().getPlacementState(context) :
                               this.wallBlock.getPlacementState(context);
