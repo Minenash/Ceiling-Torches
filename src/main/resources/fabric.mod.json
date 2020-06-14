@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "ceiling_torches",
+  "version": "${version}",
+
+  "name": "Ceiling Torches",
+  "description": "Allows you to place torches and redstone torches on ceilings",
+  "authors": [
+    "Minenash"
+  ],
+  "contact": {
+    "homepage": "https://minenash.com/",
+    "sources": "https://github.com/Minenash/Ceiling-Torches"
+  },
+
+  "license": "MIT",
+  "icon": "assets/modid/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.minenash.ceiling_torches.CeilingTorches"
+    ],
+    "client": [
+      "com.minenash.ceiling_torches.ClientEntryPoint"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.7.4",
+    "fabric": "*",
+    "minecraft": "1.15.x"
+  }
+}
