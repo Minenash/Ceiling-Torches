@@ -11,6 +11,7 @@ public class ClientEntryPoint implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
         BlockRenderLayerMap.INSTANCE.putBlock(CeilingTorches.CEILING_TORCH, RenderLayer.getCutout());
-        BlockRenderLayerMap.INSTANCE.putBlock(CeilingTorches.CEILING_REDSTONE_TORCH, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(CeilingTorches.SOUL_CEILING_TORCH, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(CeilingTorches.REDSTONE_CEILING_TORCH, RenderLayer.getCutout());
     }
 }

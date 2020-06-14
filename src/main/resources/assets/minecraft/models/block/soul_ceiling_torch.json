@@ -1,0 +1,6 @@
+{
+  "parent": "block/template_ceiling_torch",
+  "textures": {
+    "torch": "block/soul_torch"
+  }
+}

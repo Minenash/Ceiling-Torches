@@ -2,7 +2,7 @@ package com.minenash.ceiling_torches;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
-import net.minecraft.entity.EntityContext;
+import net.minecraft.block.ShapeContext;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemPlacementContext;
@@ -37,7 +37,7 @@ public class CeilingAndWallStandingBlockItem extends BlockItem {
             }
         }
 
-        return state != null && world.canPlace(state, pos, EntityContext.absent()) ? state : null;
+        return state != null && world.canPlace(state, pos, ShapeContext.absent()) ? state : null;
     }
 
     public void appendBlocks(Map<Block, Item> map, Item item) {
